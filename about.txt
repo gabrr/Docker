@@ -2,3 +2,20 @@ Docker it's basically a software to make app development more convenient, instea
 and with the problem: "it worked on my computer, it's not my fault it is not working on yours". With Docker we use containers which is separated
 from the actual machine, so everything will work in this container, and that way not matter which computer or OS it is going to run the 
 application it will run perfectly.
+
+// first create a folder with with a 'Dockerfile' file which it hold instructions.
+
+FROM php:7.0-apache
+COPY . /usr/src/myapp
+EXPOSE 8000
+
+// When we digit 'docker run hello-world' if there isn't docker will download.
+
+// 'to where the file is located' example: cd Desktop/docker/
+After I create a folder with a php file, I'll need an server and for that I have to use the docker. 
+
+// create a container
+docker build -t hello world .
+
+// create a local server
+docker run -p 80:80 hello-world
