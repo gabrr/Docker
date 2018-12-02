@@ -1,0 +1,4 @@
+Docker it's basically a software to make app development more convenient, instead of using virtual machines with different OS,
+and with the problem: "it worked on my computer, it's not my fault it is not working on yours". With Docker we use containers which is separated
+from the actual machine, so everything will work in this container, and that way not matter which computer or OS it is going to run the 
+application it will run perfectly.
